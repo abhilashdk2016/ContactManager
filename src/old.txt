@@ -1,0 +1,8 @@
+const { contacts } = this.state;
+        return (
+            <React.Fragment>
+                {contacts.map(contact => <Contact contact={contact}
+                    key={contact.id}
+                    deleteClickHandler={this.deleteContact.bind(this, contact.id)} />)}
+            </React.Fragment>
+        );
